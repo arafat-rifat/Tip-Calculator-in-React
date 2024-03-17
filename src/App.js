@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Bill from "./Components/Bill";
+import Button from "./Components/Button";
+import FriendService from "./Components/FriendService";
+import Service from "./Components/Service";
+import TotalPay from "./Components/TotalPay";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return(
+    <div className="flex flex-col gap-2 items-center py-5">
+      <Bill/>
+      <Service/>
+      <FriendService/>
+      <TotalPay/>
+      <Button title='Reset'/>
     </div>
   );
 }
