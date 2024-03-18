@@ -1,9 +1,9 @@
 import React from 'react'
 
-const TotalPay = () => {
+const TotalPay = ({bill,totalBill,onAvgTip}) => {
   return (
-    <h2 className='text-2xl font-bold'>You pay $105 ($100 + $5 tip)</h2>
+    <h2 className='text-2xl font-bold'>You pay ${totalBill} (${bill} + ${onAvgTip} tip)</h2>
   )
 }
 
-export default TotalPay
+export default TotalPay;
